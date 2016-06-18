@@ -30,7 +30,7 @@ RUN apt-get update &&\
         vim \
         zip \
 	--no-install-recommends &&\
-    curl https://downloads.hypriot.com/docker-hypriot_1.10.2-1_armhf.deb -o docker.deb
+    curl https://downloads.hypriot.com/docker-hypriot_1.10.2-1_armhf.deb -o docker.deb &&\
     dpkg -i --force-depends docker.deb &&\
     rm -f docker.deb &&\
     mkdir -p /opt &&\
